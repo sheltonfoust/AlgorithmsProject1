@@ -4,7 +4,8 @@
 // It uses the merge sort method.
 void mergeSort(int lowerBound, int upperBound)
 {
-	if (lowerBound < upperBound) {
+	if (lowerBound < upperBound) 
+	{
 		int midpoint = (lowerBound + upperBound) / 2;
 
 		mergeSort(lowerBound, midpoint);
@@ -49,8 +50,11 @@ void merge(int lowerBound, int midPoint, int upperBound)
 		}
 		else
 		{
-			Globals.dataSet[dataSetIndex] = rightArray[rightIndex];
-			Globals.inversionCount += leftArrayLen - leftIndex;
+			if (Globals.dataSet[dataSetIndex] != rightArray[rightIndex])
+			{
+				Globals.dataSet[dataSetIndex] = rightArray[rightIndex];
+				Globals.inversionCount++;
+			}
 			rightIndex++;
 		}
 		dataSetIndex++;

@@ -6,10 +6,10 @@ void quickSort(int lowerBound, int upperBound)
 {
     if (lowerBound < upperBound)
     {
-        int pivot = randomPartition(lowerBound, upperBound);
+        int pivotIndex = randomPartition(lowerBound, upperBound);
 
-        quickSort(lowerBound, pivot);
-        quickSort(pivot + 1, upperBound);
+        quickSort(lowerBound, pivotIndex);
+        quickSort(pivotIndex + 1, upperBound);
     }
 }
 
@@ -52,10 +52,12 @@ int partition(int pivot, int lowerBound, int upperBound)
 
         if (leftIndex >= rightIndex)
             return rightIndex;
-
-        int temp = Globals.dataSet[leftIndex];
-        Globals.dataSet[leftIndex] = Globals.dataSet[rightIndex];
-        Globals.dataSet[rightIndex] = temp;
-        Globals.inversionCount++;
+        if (Globals.dataSet[leftIndex] != Globals.dataSet[rightIndex])
+        {
+            int temp = Globals.dataSet[leftIndex];
+            Globals.dataSet[leftIndex] = Globals.dataSet[rightIndex];
+            Globals.dataSet[rightIndex] = temp;
+            Globals.inversionCount++;
+        }
     }
 }

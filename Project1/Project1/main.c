@@ -4,7 +4,7 @@ int main()
 {
 
     Globals.inversionCount = 0;
-    int localArray[DATA_LEN] = {4, 5, 8, 9, 6 };
+    int localArray[DATA_LEN] = {4, 5, 8, 9, 6, 9, 1, 3, 29, 12};
 
 
 
@@ -30,7 +30,7 @@ int main()
     printf("\n\rInversion Count: %d\n\r", Globals.inversionCount);
 
     
-    
+    Globals.inversionCount = 0;
     for (int index = 0; index < DATA_LEN; index++)
     {
         Globals.dataSet[index] = localArray[index];

@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define DATA_LEN 5
+#define DATA_LEN 10
 
 typedef struct _GlobalStruct
 {
@@ -17,7 +17,7 @@ void mergeSort(int lowerBound, int upperBound);
 void merge(int lowerBound, int midPoint, int upperBound);
 void quickSort(int lowerBound, int upperBound);
 int randomPartition(int lowerBound, int upperBound);
-int partition(int lowerBound, int upperBound);
+int partition(int pivot, int lowerBound, int upperBound);
 
 
 
