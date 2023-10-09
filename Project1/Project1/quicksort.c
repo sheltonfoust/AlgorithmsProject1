@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+//
 #define DATA_LEN 10
 
 int inversionCount;
