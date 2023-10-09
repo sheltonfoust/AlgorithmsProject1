@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define DATA_LEN 10
+#define DATA_LEN 5
 
 typedef struct _GlobalStruct
 {

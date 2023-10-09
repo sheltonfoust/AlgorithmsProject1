@@ -1,2 +1,5 @@
-﻿  main.c
+﻿  quicksort.c
+C:\Users\sfous\source\repos\AlgorithmsProject1\Project1\Project1\quicksort.c(26,11): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\sfous\source\repos\AlgorithmsProject1\Project1\Project1\quicksort.c(31,41): warning C4020: 'partition': too many actual parameters
+C:\Users\sfous\source\repos\AlgorithmsProject1\Project1\Project1\quicksort.c(40,1): warning C4029: declared formal parameter list different from definition
   Project1.vcxproj -> C:\Users\sfous\source\repos\AlgorithmsProject1\Project1\x64\Debug\Project1.exe
