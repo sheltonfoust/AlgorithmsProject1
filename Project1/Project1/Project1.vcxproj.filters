@@ -35,10 +35,13 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\Desktop\Unstructured Algorithms Project1 Files\merge_sort.c">
+    <ClCompile Include="quicksort.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="quicksort.c">
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mergesort.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

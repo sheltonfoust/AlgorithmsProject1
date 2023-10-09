@@ -135,7 +135,8 @@
     <Text Include="..\..\..\..\..\Desktop\Unstructured Algorithms Project1 Files\source5.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\Desktop\Unstructured Algorithms Project1 Files\merge_sort.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="mergesort.c" />
     <ClCompile Include="quicksort.c" />
   </ItemGroup>
   <ItemGroup>
